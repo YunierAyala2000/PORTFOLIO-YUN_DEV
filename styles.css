@@ -215,6 +215,7 @@ body.dark-mode header {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 #toggle-theme:hover {
     background: #4fc3f7;
