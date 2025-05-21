@@ -157,6 +157,7 @@ function startTypewriter() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  
   setupLanguageSwitcher();
   // Idioma por defecto o guardado
   const lang = localStorage.getItem('lang') || 'es';

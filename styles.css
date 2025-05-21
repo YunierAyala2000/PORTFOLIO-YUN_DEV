@@ -60,6 +60,47 @@ header {
     border-bottom: 1.5px solid #4fc3f7;
 }
 
+/* ===== Menú SIEMPRE VISIBLE y RESPONSIVE ===== */
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0.5rem 2rem;
+    list-style: none;
+    background: rgba(34, 34, 34, 0.85);
+    border-radius: 2rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 100;
+}
+@media (max-width: 900px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 0.5rem 0.5rem;
+        border-radius: 1.2rem;
+        align-items: stretch;
+        width: 100%;
+        background: rgba(34,34,34,0.97);
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+    .nav-list li {
+        margin: 0.2rem 0;
+    }
+    .nav-list a {
+        font-size: 1.15rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 12px;
+        color: #fff;
+    }
+    #toggle-theme, .language-switcher {
+        margin-top: 0.5rem;
+    }
+}
+
+
 .nav-flex {
     display: flex;
     justify-content: space-between;
@@ -260,6 +301,8 @@ body.dark-mode #toggle-theme {
     border: 1.5px solid #e3f2fd;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 body.dark-mode .section {
     background: rgba(35,39,43,0.98);
@@ -319,7 +362,9 @@ body.dark-mode .section {
 
 .proyecto-img {
     width: 100%;
-    height: 170px;
+    max-width: 100%;
+    height: auto;
+    max-height: 170px;
     object-fit: cover;
     border-radius: 14px;
     margin-bottom: 1.1rem;
@@ -397,6 +442,14 @@ body.dark-mode .proyecto a:hover {
 }
 
 @media (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+    .section {
+        max-width: 98vw;
+        margin: 1.2rem;
+        padding: 1.2rem 0.7rem;
+    }
     .proyectos-lista {
         flex-direction: column;
         align-items: center;
@@ -622,6 +675,45 @@ footer {
 }
 
 @media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .section {
+        margin: 0.5rem;
+        padding: 0.6rem 0.2rem;
+        border-radius: 14px;
+    }
+    .proyectos-lista {
+        gap: 0.6rem;
+    }
+    .carrusel {
+        max-width: 99vw;
+    }
+    .carrusel-item {
+        min-width: 80px;
+        min-height: 80px;
+        font-size: 0.92rem;
+        padding: 0.5rem 0.3rem 0.4rem 0.3rem;
+    }
+    nav, .nav-list {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: stretch;
+    }
+    .nav-list a {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+    }
+    #toggle-theme {
+        margin-top: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.1rem;
+    }
+    footer {
+        font-size: 0.93rem;
+    }
+
     .footer-content {
         font-size: 0.98rem;
     }
