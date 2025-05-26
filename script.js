@@ -16,22 +16,27 @@ const translations = {
     proyectosTitulo: "Proyectos",
     proyectos: [
       {
-        titulo: "Portfolio Web Moderno",
-        descripcion: "Sitio web personal responsive con navegación elegante, dark mode y animaciones suaves. Desarrollado en HTML, CSS y JS puro.",
-        boton: "Ver más"
+        titulo: "Generador de Comandos .NET",
+        img: "Assets/img/P1.png",
+        descripcion: "Generador de comandos .NET para crear proyectos a partir de plantillas. Desarrollado en HTML, CSS y JS puro.",
+        boton: "Ver más",
+        link: "https://yunierayala2000.github.io/PORTFOLIO-YUN_DEV/Pages/Proyect1/commandGeneratNet.html"
       },
       {
         titulo: "Dashboard Analytics",
+        img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
         descripcion: "Panel interactivo para visualización de métricas en tiempo real usando React, Chart.js y Node.js. Incluye autenticación y filtros dinámicos.",
         boton: "Ver más"
       },
       {
         titulo: "E-commerce API",
+        img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
         descripcion: "API RESTful para tienda online, desarrollada en Node.js y Express, con integración de pagos y panel de administración.",
         boton: "Ver más"
       },
       {
         titulo: "Gestor de Tareas",
+        img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
         descripcion: "Aplicación web para gestión de tareas con drag & drop, notificaciones y sincronización en la nube. Stack: React, Firebase.",
         boton: "Ver más"
       }
@@ -52,22 +57,27 @@ const translations = {
     proyectosTitulo: "Projects",
     proyectos: [
       {
-        titulo: "Modern Web Portfolio",
-        descripcion: "Responsive personal website with elegant navigation, dark mode, and smooth animations. Built with pure HTML, CSS, and JS.",
-        boton: "See more"
+        titulo: ".NET Command Generator",
+        img: "Assets/img/P1.png",
+        descripcion: "Generador de comandos .NET para crear proyectos a partir de plantillas. Desarrollado en HTML, CSS y JS puro.",
+        boton: "See more",
+        link: "https://yunierayala2000.github.io/PORTFOLIO-YUN_DEV/Pages/Proyect1/commandGeneratNet.html"
       },
       {
         titulo: "Analytics Dashboard",
-        descripcion: "Interactive dashboard for real-time metrics visualization using React, Chart.js, and Node.js. Includes authentication and dynamic filters.",
+        img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+        descripcion: "Panel interactivo para visualización de métricas en tiempo real usando React, Chart.js, y Node.js. Incluye autenticación y filtros dinámicos.",
         boton: "See more"
       },
       {
         titulo: "E-commerce API",
+        img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
         descripcion: "RESTful API for online store, built with Node.js and Express, with payment integration and admin panel.",
         boton: "See more"
       },
       {
         titulo: "Task Manager",
+        img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
         descripcion: "Web app for task management with drag & drop, notifications, and cloud sync. Stack: React, Firebase.",
         boton: "See more"
       }
@@ -95,10 +105,10 @@ function setLanguage(lang) {
   if (proyectosCont) {
     proyectosCont.innerHTML = t.proyectos.map(proj => `
       <div class="proyecto">
-        <img class="proyecto-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="${proj.titulo}">
+        <img class="proyecto-img" src="${proj.img}" alt="${proj.titulo}">
         <h3>${proj.titulo}</h3>
         <p>${proj.descripcion}</p>
-        <a href="#" target="_blank" rel="noopener">${proj.boton}</a>
+        <a href="${proj.link}" target="_blank" rel="noopener">${proj.boton}</a>
       </div>
     `).join('');
   }
