@@ -23,11 +23,14 @@
                     <h2 class="logo-text">Junier Ayala Perez</h2>
                 </a>
                 <nav class="nav">
-                    <a href="#sobre-mi">Sobre Mí</a>
-                    <a href="#experiencia">Experiencia</a>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#habilidades">Habilidades</a>
+                    <a href="#sobre-mi" data-i18n="nav.about">Sobre Mí</a>
+                    <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+                    <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+                    <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
                 </nav>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" id="themeToggle">
                     <span class="material-symbols-outlined">light_mode</span>
                 </button>
@@ -42,15 +45,15 @@
                 <div class="hero-grid">
                     <div class="hero-text">
                         <div class="hero-heading">
-                            <h1>Desarrollador de Software Full-Stack</h1>
-                            <h2>Creando soluciones web robustas y escalables con un enfoque en la experiencia del usuario.</h2>
+                            <h1 data-i18n="hero.title">Desarrollador de Software Full-Stack</h1>
+                            <h2 data-i18n="hero.subtitle">Creando soluciones web robustas y escalables con un enfoque en la experiencia del usuario.</h2>
                         </div>
                         <div class="hero-buttons">
                             <a class="btn-primary" href="#">
-                                <span>Descargar CV</span>
+                                <span data-i18n="hero.downloadCV">Descargar CV</span>
                             </a>
                             <a class="btn-secondary" href="#contacto">
-                                <span>Contáctame</span>
+                                <span data-i18n="hero.contact">Contáctame</span>
                             </a>
                         </div>
                     </div>
@@ -64,8 +67,8 @@
         <!-- About Me Section -->
         <section class="section" id="sobre-mi">
             <div class="container">
-                <h2 class="section-title">Sobre Mí</h2>
-                <p class="section-text">
+                <h2 class="section-title" data-i18n="about.title">Sobre Mí</h2>
+                <p class="section-text" data-i18n="about.description">
                     Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web completas. Me especializo en tecnologías modernas y disfruto resolviendo problemas complejos para ofrecer productos de alta calidad. Mi objetivo es seguir aprendiendo y contribuyendo a proyectos innovadores que tengan un impacto positivo.
                 </p>
             </div>
@@ -74,7 +77,7 @@
         <!-- Experience Section -->
         <section class="section" id="experiencia">
             <div class="container">
-                <h2 class="section-title">Experiencia Laboral</h2>
+                <h2 class="section-title" data-i18n="experience.title">Experiencia Laboral</h2>
                 <div class="timeline">
                     <!-- Timeline Item 1 -->
                     <div class="timeline-item">
@@ -106,50 +109,50 @@
         <!-- Projects Section -->
         <section class="section" id="proyectos">
             <div class="container">
-                <h2 class="section-title">Proyectos Destacados</h2>
+                <h2 class="section-title" data-i18n="projects.title">Proyectos Destacados</h2>
                 <div class="projects-grid">
                     <!-- Project Card 1 -->
                     <div class="project-card">
-                       <img class=" project-image" src="/assets/image/Proyecto1.png" alt="">
-                        <h3>Generador de Comandos .NET</h3>
-                        <p>Generador de comandos .NET para crear proyectos a partir de plantillas.</p>
+                       <img class=" project-image" src="/assets/image/proyecto1.png" alt="">
+                        <h3 data-i18n="projects.project1.title">Generador de Comandos .NET</h3>
+                        <p data-i18n="projects.project1.description">Generador de comandos .NET para crear proyectos a partir de plantillas.</p>
                         <div class="project-tags">
                             <span class="tag">Html</span>
                             <span class="tag">Css</span>
                             <span class="tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="Pages/Proyect1/commandGeneratNet.html" target="_blank" class="project-link">Demo <span class="material-symbols-outlined">open_in_new</span></a>
+                            <a href="Pages/Proyect1/commandGeneratNet.html" target="_blank" class="project-link" data-i18n="projects.demo">Demo <span class="material-symbols-outlined">open_in_new</span></a>
                             <a href="#" class="project-link">GitHub <span class="material-symbols-outlined">code</span></a>
                         </div>
                     </div>
                     <!-- Project Card 2 -->
                     <div class="project-card">
-                       <img class=" project-image" src="/assets/image/Proyecto2.png" alt="">
-                        <h3>Generador de texto a voz</h3>
-                        <p>Generador de texto a voz en tiempo real con ajustes de voz.</p>
+                       <img class=" project-image" src="/assets/image/proyecto2.png" alt="">
+                        <h3 data-i18n="projects.project2.title">Generador de texto a voz</h3>
+                        <p data-i18n="projects.project2.description">Generador de texto a voz en tiempo real con ajustes de voz.</p>
                         <div class="project-tags">
                             <span class="tag">Html</span>
                             <span class="tag">Css</span>
                             <span class="tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://yunierayala2000.github.io/Text-A-Voz/" target="_blank" class="project-link">Demo <span class="material-symbols-outlined">open_in_new</span></a>
+                            <a href="https://yunierayala2000.github.io/Text-A-Voz/" target="_blank" class="project-link" data-i18n="projects.demo">Demo <span class="material-symbols-outlined">open_in_new</span></a>
                             <a href="https://github.com/YunierAyala2000/Text-A-Voz" target="_blank" class="project-link">GitHub <span class="material-symbols-outlined">code</span></a>
                         </div>
                     </div>
                     <!-- Project Card 3 -->
                     <div class="project-card">
                         <div class="project-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9nNZ76y6O-ll8JlWDTi1ejng3ihp3cDGOZ8oMvXZJAW0Bbxht3w4AeSZCE6LUS1d5igENnO4KBr8ojlWOcBB2aFIF02wle8BKkkmxmCVkRL97pB1tStpVlNZPeLd08TJ5qeJTIAfs1bmJA-Upje-Ac4oVDwBIPEcC2KIx9K5VMTQVQhaT70f5bOrsf4YO8lzjBxoaQWGrAkBgU0IlfCM1PIEJcm3wuRXug7rG2usVqZhw7RfwiAw-HUzSoNr0bJwxuKjDAIhpGqxe')"></div>
-                        <h3>Dashboard Analítico</h3>
-                        <p>Panel de control interactivo para visualizar métricas clave de negocio con gráficos y tablas de datos dinámicas.</p>
+                        <h3 data-i18n="projects.project3.title">Dashboard Analítico</h3>
+                        <p data-i18n="projects.project3.description">Panel de control interactivo para visualizar métricas clave de negocio con gráficos y tablas de datos dinámicas.</p>
                         <div class="project-tags">
                             <span class="tag">Vue.js</span>
                             <span class="tag">D3.js</span>
                             <span class="tag">Python (Flask)</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">Demo <span class="material-symbols-outlined">open_in_new</span></a>
+                            <a href="#" class="project-link" data-i18n="projects.demo">Demo <span class="material-symbols-outlined">open_in_new</span></a>
                             <a href="#" class="project-link">GitHub <span class="material-symbols-outlined">code</span></a>
                         </div>
                     </div>
@@ -160,42 +163,28 @@
         <!-- Skills Section -->
         <section class="section" id="habilidades">
             <div class="container">
-                <h2 class="section-title">Tecnologías y Habilidades</h2>
+                <h2 class="section-title" data-i18n="skills.title">Tecnologías y Habilidades</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Frontend</h3>
                         <ul>
                             <li>HTML5 & CSS3</li>
                             <li>JavaScript (ES6+)</li>
                             <li>TypeScript</li>
-                            <li>React & Next.js</li>
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>ASPX.NET</li>
                             <li>Vue.js</li>
                             <li>Tailwind CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <ul>
                             <li>Node.js & Express</li>
                             <li>Python (Flask, Django)</li>
                             <li>REST APIs</li>
                             <li>GraphQL</li>
                             <li>Java & Spring Boot</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Bases de Datos</h3>
-                        <ul>
-                            <li>PostgreSQL</li>
+                             <li>PostgreSQL</li>
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Redis</li>
                             <li>Firebase</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Cloud & DevOps</h3>
-                        <ul>
                             <li>AWS (EC2, S3, RDS)</li>
                             <li>Docker</li>
                             <li>Git & GitHub</li>
@@ -212,7 +201,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-text">© 2023 Junier Ayala Perez. Todos los derechos reservados.</p>
+                <p class="footer-text" data-i18n="footer.rights">© 2023 Junier Ayala Perez. Todos los derechos reservados.</p>
                 <div class="social-links">
                     <a href="https://github.com/YunierAyala2000" target="_blank" aria-label="GitHub">
                         <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">

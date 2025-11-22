@@ -26,6 +26,98 @@ function updateThemeIcon() {
   }
 }
 
+// Language Toggle
+const translations = {
+  es: {
+    "nav.about": "Sobre Mí",
+    "nav.experience": "Experiencia",
+    "nav.projects": "Proyectos",
+    "nav.skills": "Habilidades",
+    "hero.title": "Desarrollador de Software Full-Stack",
+    "hero.subtitle":
+      "Creando soluciones web robustas y escalables con un enfoque en la experiencia del usuario.",
+    "hero.downloadCV": "Descargar CV",
+    "hero.contact": "Contáctame",
+    "about.title": "Sobre Mí",
+    "about.description":
+      "Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web completas. Me especializo en tecnologías modernas y disfruto resolviendo problemas complejos para ofrecer productos de alta calidad. Mi objetivo es seguir aprendiendo y contribuyendo a proyectos innovadores que tengan un impacto positivo.",
+    "experience.title": "Experiencia Laboral",
+    "projects.title": "Proyectos Destacados",
+    "projects.project1.title": "Generador de Comandos .NET",
+    "projects.project1.description":
+      "Generador de comandos .NET para crear proyectos a partir de plantillas.",
+    "projects.project2.title": "Generador de texto a voz",
+    "projects.project2.description":
+      "Generador de texto a voz en tiempo real con ajustes de voz.",
+    "projects.project3.title": "Dashboard Analítico",
+    "projects.project3.description":
+      "Panel de control interactivo para visualizar métricas clave de negocio con gráficos y tablas de datos dinámicas.",
+    "projects.demo": "Demo",
+    "skills.title": "Tecnologías y Habilidades",
+    "footer.rights":
+      "© 2023 Junier Ayala Perez. Todos los derechos reservados.",
+  },
+  en: {
+    "nav.about": "About Me",
+    "nav.experience": "Experience",
+    "nav.projects": "Projects",
+    "nav.skills": "Skills",
+    "hero.title": "Full-Stack Software Developer",
+    "hero.subtitle":
+      "Creating robust and scalable web solutions with a focus on user experience.",
+    "hero.downloadCV": "Download CV",
+    "hero.contact": "Contact Me",
+    "about.title": "About Me",
+    "about.description":
+      "I am a passionate software developer with experience in building complete web applications. I specialize in modern technologies and enjoy solving complex problems to deliver high-quality products. My goal is to keep learning and contributing to innovative projects that have a positive impact.",
+    "experience.title": "Work Experience",
+    "projects.title": "Featured Projects",
+    "projects.project1.title": ".NET Command Generator",
+    "projects.project1.description":
+      ".NET command generator to create projects from templates.",
+    "projects.project2.title": "Text to Speech Generator",
+    "projects.project2.description":
+      "Real-time text-to-speech generator with voice adjustments.",
+    "projects.project3.title": "Analytics Dashboard",
+    "projects.project3.description":
+      "Interactive dashboard to visualize key business metrics with dynamic charts and data tables.",
+    "projects.demo": "Demo",
+    "skills.title": "Technologies and Skills",
+    "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
+  },
+};
+
+let currentLang = localStorage.getItem("language") || "es";
+const langToggle = document.getElementById("langToggle");
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem("language", lang);
+
+  // Actualizar todos los elementos con data-i18n
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  // Actualizar el texto del botón de idioma
+  langToggle.querySelector(".lang-text").textContent =
+    lang === "es" ? "EN" : "ES";
+
+  // Actualizar el atributo lang del HTML
+  document.documentElement.lang = lang;
+}
+
+// Inicializar idioma
+setLanguage(currentLang);
+
+langToggle.addEventListener("click", () => {
+  const newLang = currentLang === "es" ? "en" : "es";
+  setLanguage(newLang);
+});
+
 // Smooth Scroll para navegación
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

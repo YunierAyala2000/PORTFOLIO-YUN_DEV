@@ -149,6 +149,40 @@ body.dark .theme-toggle {
     color: var(--slate-300);
 }
 
+.lang-toggle {
+    background: none;
+    border: 1px solid var(--slate-300);
+    color: var(--slate-600);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s;
+    margin-left: 1rem;
+}
+
+.lang-toggle:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+body.dark .lang-toggle {
+    border-color: var(--slate-700);
+    color: var(--slate-300);
+}
+
+body.dark .lang-toggle:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.lang-text {
+    display: inline-block;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
 /* Botones */
 .btn-primary {
     display: inline-flex;
@@ -542,7 +576,7 @@ body.dark .project-card p {
 
 .skill-category {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.75rem;
 }
 
