@@ -1,0 +1,22 @@
+{
+  "name": "Junier Dev Portfolio",
+  "short_name": "JunierDev",
+  "description": "Portafolio de Junier Ayala Perez - Desarrollador de Software",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#18181b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/image/icono-web.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "assets/image/icono-web.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
