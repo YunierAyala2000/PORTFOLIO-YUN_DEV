@@ -40,7 +40,7 @@ const translations = {
     "hero.contact": "Contáctame",
     "about.title": "Sobre Mí",
     "about.description":
-      "Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web completas. Me especializo en tecnologías modernas y disfruto resolviendo problemas complejos para ofrecer productos de alta calidad. Mi objetivo es seguir aprendiendo y contribuyendo a proyectos innovadores que tengan un impacto positivo.",
+      " Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web completas. Me especializo en tecnologías modernas y disfruto resolviendo problemas complejos para ofrecer productos de alta calidad. Mi objetivo es seguir aprendiendo y contribuyendo a proyectos innovadores que tengan un impacto positivo. Tengo experiencia en desarrollo de software a la medida, pruebas unitarias, manejo y seguimiento de pipelines azure dev ops, refactorización de código según estándares de sonarqube, y bases de datos relacionales y no relacionales. Tengo un sólido conocimiento de herramientas como C#, .Net core, Node.js, Vuejs , React, Java Scritp, Typescript, Sql Server, Mysql, Reportin Services, DevExpress.",
     "experience.title": "Experiencia Laboral",
     "projects.title": "Proyectos Destacados",
     "projects.project1.title": "Generador de Comandos .NET",
