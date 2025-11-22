@@ -602,6 +602,106 @@ body.dark .skill-category ul {
     margin-bottom: 0.5rem;
 }
 
+/* --- Skills Cards Modern Section --- */
+.skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+.skills-group-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+.skills-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.skill-card {
+    background: rgba(15,23,42,0.7);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    min-height: 160px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+.skill-card:hover {
+    transform: translateY(-6px) scale(1.04);
+}
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--slate-900);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.skill-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.skill-level {
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+.skill-level.avanzado { color: #6c63ff; }
+.skill-level.intermedio { color: #00bfae; }
+.skill-level.basico { color: #ffb347; }
+
+@media (max-width: 900px) {
+    .skills-row {
+        gap: 1rem;
+    }
+    .skill-card {
+        width: 120px;
+        min-height: 120px;
+        padding: 1.2rem 0.7rem 0.7rem 0.7rem;
+    }
+    .skill-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 600px) {
+    .skills-row {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .skill-card {
+        width: 100px;
+        min-height: 100px;
+        padding: 0.7rem 0.3rem 0.3rem 0.3rem;
+    }
+    .skill-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+    .skills-group-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* --- End Skills Cards Modern Section --- */
+
 /* Contact Section */
 .contact-card {
     background-color: var(--white);
