@@ -2,9 +2,12 @@
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
 
-// Cargar tema guardado
+// Cargar tema guardado (por defecto: dark)
 const savedTheme = localStorage.getItem("theme") || "dark";
-body.classList.toggle("dark", savedTheme === "dark");
+body.classList.add("dark"); // Asegurar que dark esté activo
+if (savedTheme === "light") {
+  body.classList.remove("dark");
+}
 updateThemeIcon();
 
 themeToggle.addEventListener("click", () => {
