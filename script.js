@@ -49,9 +49,9 @@ const translations = {
     "projects.project2.title": "Generador de texto a voz",
     "projects.project2.description":
       "Generador de texto a voz en tiempo real con ajustes de voz.",
-    "projects.project3.title": "Dashboard Analítico",
+    "projects.project3.title": "YouGym",
     "projects.project3.description":
-      "Panel de control interactivo para visualizar métricas clave de negocio con gráficos y tablas de datos dinámicas.",
+      "Plataforma multiplataforma para la gestion de mensualidades, fechas de vencimiento, regristro de ingresos y alumnos de gimnasios Pequeños. Esta app la puedes usar en tu pc, mobil y navegar, puedes descargarla en cualquier dispositivo",
     "projects.demo": "Demo",
     "skills.title": "Tecnologías y Habilidades",
     "footer.rights":
@@ -78,9 +78,9 @@ const translations = {
     "projects.project2.title": "Text to Speech Generator",
     "projects.project2.description":
       "Real-time text-to-speech generator with voice adjustments.",
-    "projects.project3.title": "Analytics Dashboard",
+    "projects.project3.title": "YouGym",
     "projects.project3.description":
-      "Interactive dashboard to visualize key business metrics with dynamic charts and data tables.",
+      "Multi-platform platform for managing memberships, due dates, income registration, and student records for small gyms. You can use this app on your PC, mobile device, and web browser; you can download it on any device.",
     "projects.demo": "Demo",
     "skills.title": "Technologies and Skills",
     "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
