@@ -52,6 +52,12 @@ const translations = {
     "projects.project3.title": "YouGym",
     "projects.project3.description":
       "Plataforma multiplataforma para la gestion de mensualidades, fechas de vencimiento, regristro de ingresos y alumnos de gimnasios Pequeños. Esta app la puedes usar en tu pc, mobil y navegar, puedes descargarla en cualquier dispositivo",
+    "projects.project2.title": "Generador de texto a voz",
+    "projects.project2.description":
+      "Generador de texto a voz en tiempo real con ajustes de voz.",
+    "projects.project4.title": "TaskFlow",
+    "projects.project4.description":
+      "Plataforma para la gestión de tareas y flujo de trabajo, permitiendo a los usuarios organizar y priorizar sus actividades de manera eficiente. app multiplataforma puede ser utilizada en dispositivos móviles, navegadores web y computadoras de escritorio, brindando flexibilidad y accesibilidad para gestionar tareas en cualquier momento y lugar.",
     "projects.demo": "Demo",
     "skills.title": "Tecnologías y Habilidades",
     "footer.rights":
@@ -81,6 +87,9 @@ const translations = {
     "projects.project3.title": "YouGym",
     "projects.project3.description":
       "Multi-platform platform for managing memberships, due dates, income registration, and student records for small gyms. You can use this app on your PC, mobile device, and web browser; you can download it on any device.",
+    "projects.project4.title": "TaskFlow",
+    "projects.project4.description":
+      "Platform for task and workflow management, allowing users to organize and prioritize their activities efficiently. This is a multi-platform app that can be used on mobile devices, web browsers, and desktop computers, providing flexibility and accessibility to manage tasks anytime and anywhere.",
     "projects.demo": "Demo",
     "skills.title": "Technologies and Skills",
     "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
