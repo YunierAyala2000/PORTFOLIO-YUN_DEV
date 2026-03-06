@@ -12,9 +12,13 @@ Portafolio web personal desarrollado como Progressive Web App (PWA), con soporte
 
 ## 📸 Capturas del portafolio
 
-### Hero / Inicio
+### Web
 
-![Hero](./assets/image/2.jpg)
+![Hero](./public/inicio.png)
+
+### Movil
+
+![Hero](./public/inicio-movil.png)
 
 ### Proyectos destacados
 
