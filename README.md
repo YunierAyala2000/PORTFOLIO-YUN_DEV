@@ -45,17 +45,11 @@ Portafolio web personal desarrollado como Progressive Web App (PWA), con soporte
 #### TaskFlow — Vista móvil (modo claro)
 
 ![TaskFlow Móvil Claro](./public/p4-movil-claro.png)
-
-#### TaskFlow — Vista móvil (detalle, modo claro)
-
 ![TaskFlow Móvil Claro Detalle](./public/p4-movil-claro-det.png)
 
 #### TaskFlow — Vista móvil (modo oscuro)
 
 ![TaskFlow Móvil Oscuro](./public/p4-movil-oscuro.png)
-
-#### TaskFlow — Vista móvil (detalle, modo oscuro)
-
 ![TaskFlow Móvil Oscuro Detalle](./public/p4-movil-oscuro-det.png)
 
 ---
