@@ -38,6 +38,7 @@ const translations = {
       "Creando soluciones web robustas y escalables con un enfoque en la experiencia del usuario.",
     "hero.downloadCV": "Descargar CV",
     "hero.contact": "Contáctame",
+    "hero.gitportfolio": "Git del portafolio",
     "about.title": "Sobre Mí",
     "about.description":
       " Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web completas. Me especializo en tecnologías modernas y disfruto resolviendo problemas complejos para ofrecer productos de alta calidad. Mi objetivo es seguir aprendiendo y contribuyendo a proyectos innovadores que tengan un impacto positivo. Tengo experiencia en desarrollo de software a la medida, pruebas unitarias, manejo y seguimiento de pipelines azure dev ops, refactorización de código según estándares de sonarqube, y bases de datos relacionales y no relacionales. Tengo un sólido conocimiento de herramientas como C#, .Net core, Node.js, Vuejs , React, Java Scritp, Typescript, Sql Server, Mysql, Reportin Services, DevExpress.",
@@ -57,7 +58,7 @@ const translations = {
       "Generador de texto a voz en tiempo real con ajustes de voz.",
     "projects.project4.title": "TaskFlow",
     "projects.project4.description":
-      "Plataforma para la gestión de tareas y flujo de trabajo, permitiendo a los usuarios organizar y priorizar sus actividades de manera eficiente. app multiplataforma puede ser utilizada en dispositivos móviles, navegadores web y computadoras de escritorio, brindando flexibilidad y accesibilidad para gestionar tareas en cualquier momento y lugar.",
+      "Plataforma para la gestión de tareas y flujo de trabajo, permitiendo a los usuarios organizar y priorizar sus actividades de manera eficiente. app multiplataforma puede ser utilizada en dispositivos móviles, navegadores web y computadoras de escritorio, cuenta con modo claro y oscuro",
     "projects.demo": "Demo",
     "skills.title": "Tecnologías y Habilidades",
     "footer.rights":
@@ -73,6 +74,7 @@ const translations = {
       "Creating robust and scalable web solutions with a focus on user experience.",
     "hero.downloadCV": "Download CV",
     "hero.contact": "Contact Me",
+    "hero.gitportfolio": "Git Portfolio",
     "about.title": "About Me",
     "about.description":
       "I am a passionate software developer with experience in building complete web applications. I specialize in modern technologies and enjoy solving complex problems to deliver high-quality products. My goal is to keep learning and contributing to innovative projects that have a positive impact.",
@@ -89,7 +91,7 @@ const translations = {
       "Multi-platform platform for managing memberships, due dates, income registration, and student records for small gyms. You can use this app on your PC, mobile device, and web browser; you can download it on any device.",
     "projects.project4.title": "TaskFlow",
     "projects.project4.description":
-      "Platform for task and workflow management, allowing users to organize and prioritize their activities efficiently. This is a multi-platform app that can be used on mobile devices, web browsers, and desktop computers, providing flexibility and accessibility to manage tasks anytime and anywhere.",
+      "Platform for task and workflow management, allowing users to organize and prioritize their activities efficiently. Multi-platform app that can be used on mobile devices, web browsers, and desktop computers, with light and dark mode.",
     "projects.demo": "Demo",
     "skills.title": "Technologies and Skills",
     "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
@@ -121,6 +123,30 @@ function setLanguage(lang) {
 
 // Inicializar idioma
 setLanguage(currentLang);
+
+// Carousel
+function initCarousels() {
+  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const track = carousel.querySelector(".carousel-track");
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    const dots = carousel.querySelectorAll(".carousel-dot");
+    const prevBtn = carousel.querySelector(".carousel-btn-prev");
+    const nextBtn = carousel.querySelector(".carousel-btn-next");
+    let current = 0;
+
+    function goTo(index) {
+      dots[current].classList.remove("active");
+      current = (index + slides.length) % slides.length;
+      dots[current].classList.add("active");
+      track.style.transform = `translateX(-${current * 100}%)`;
+    }
+
+    prevBtn.addEventListener("click", () => goTo(current - 1));
+    nextBtn.addEventListener("click", () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
+  });
+}
+initCarousels();
 
 langToggle.addEventListener("click", () => {
   const newLang = currentLang === "es" ? "en" : "es";
