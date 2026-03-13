@@ -59,6 +59,9 @@ const translations = {
     "projects.project4.title": "TaskFlow",
     "projects.project4.description":
       "Plataforma para la gestión de tareas y flujo de trabajo, permitiendo a los usuarios organizar y priorizar sus actividades de manera eficiente. app multiplataforma puede ser utilizada en dispositivos móviles, navegadores web y computadoras de escritorio, cuenta con modo claro y oscuro",
+    "projects.project5.title": "Chat IA - OpenRouter-IA",
+    "projects.project5.description":
+      "La aplicación implementa una lógica que, al momento de realizar una petición, consulta los modelos gratuitos disponibles y los utiliza de forma secuencial hasta encontrar uno que esté activo y pueda retornar una respuesta correctamente.",
     "projects.demo": "Demo",
     "skills.title": "Tecnologías y Habilidades",
     "footer.rights":
@@ -92,6 +95,9 @@ const translations = {
     "projects.project4.title": "TaskFlow",
     "projects.project4.description":
       "Platform for task and workflow management, allowing users to organize and prioritize their activities efficiently. Multi-platform app that can be used on mobile devices, web browsers, and desktop computers, with light and dark mode.",
+    "projects.project5.title": "Chat IA - OpenRouter-IA",
+    "projects.project5.description":
+      "The application implements a logic that, when making a request, consults the available free models and uses them sequentially until it finds one that is active and can return a correct response.",
     "projects.demo": "Demo",
     "skills.title": "Technologies and Skills",
     "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
