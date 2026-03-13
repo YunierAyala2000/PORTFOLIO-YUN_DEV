@@ -52,6 +52,11 @@ Portafolio web personal desarrollado como Progressive Web App (PWA), con soporte
 ![TaskFlow Móvil Oscuro](./public/p4-movil-oscuro.png)
 ![TaskFlow Móvil Oscuro Detalle](./public/p4-movil-oscuro-det.png)
 
+#### Chat IA — OpenRouter-IA
+
+![Chat IA - PC Claro](./public/p5-pc-claro.png)
+![Chat IA - PC Oscuro](./public/p5-pc-oscuro.png)
+
 ---
 
 ## 🛠️ Tecnologías utilizadas
@@ -158,6 +163,15 @@ Aplicación multiplataforma de gestión de tareas y flujo de trabajo. Disponible
 - **Tecnologías:** React.js, TypeScript, Next.js, Tailwind CSS, Next-PWA
 - **Demo:** [pt-taskflow-junier-ayala.vercel.app](https://pt-taskflow-junier-ayala.vercel.app/)
 - **Repositorio:** [GitHub](https://github.com/YunierAyala2000/pt-taskflow-junier-ayala)
+
+---
+
+### 5. Chat IA — OpenRouter-IA
+
+Proyecto de chat con IA que consulta modelos gratuitos disponibles de OpenRouter de forma secuencial para garantizar respuestas.
+
+- **Tecnologías:** React.js, TypeScript, Tailwind CSS, Slint, Prettier
+- **Repositorio:** [GitHub](https://github.com/YunierAyala2000/Chat-IA-with-Open-Router-IA)
 
 ---
 
