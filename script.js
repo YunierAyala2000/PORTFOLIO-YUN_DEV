@@ -173,19 +173,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form Submission
-const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ahora solo mostramos un mensaje
-    alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.");
-    contactForm.reset();
-  });
-}
-
 // Animación al hacer scroll
 const observerOptions = {
   threshold: 0.1,
@@ -248,4 +235,51 @@ window.addEventListener("scroll", () => {
       link.style.color = "var(--primary)";
     }
   });
+});
+
+// Lightbox (imagen a pantalla completa al hacer click)
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+function openLightbox(src, alt) {
+  if (!lightbox || !lightboxImage) return;
+  lightboxImage.src = src;
+  lightboxImage.alt = alt || "Imagen ampliada";
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+}
+
+function closeLightbox() {
+  if (!lightbox) return;
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  if (lightboxImage) {
+    lightboxImage.src = "";
+  }
+}
+
+// Mostrar imagen al hacer click en las tarjetas de proyecto (incluye carruseles)
+document.querySelectorAll(".project-card img").forEach((img) => {
+  img.style.cursor = "zoom-in";
+  img.addEventListener("click", () => openLightbox(img.src, img.alt));
+});
+
+// Cerrar al hacer click fuera de la imagen, en el botón o al presionar Escape
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox || event.target === lightboxClose) {
+      closeLightbox();
+    }
+  });
+}
+
+window.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    lightbox &&
+    lightbox.classList.contains("open")
+  ) {
+    closeLightbox();
+  }
 });
