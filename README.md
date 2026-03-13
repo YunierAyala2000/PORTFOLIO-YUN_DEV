@@ -6,7 +6,7 @@ Portafolio web personal desarrollado como Progressive Web App (PWA), con soporte
 
 ## 🚀 Demo
 
-🔗 [Ver portafolio en vivo](https://yunierayala2000.github.io) _(actualizar con la URL real)_
+🔗 [Ver portafolio en vivo](https://yunierayala2000.github.io/PORTFOLIO-YUN_DEV/) _(actualizar con la URL real)_
 
 ---
 
