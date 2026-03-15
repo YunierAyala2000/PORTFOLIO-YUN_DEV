@@ -63,6 +63,9 @@ const translations = {
     "projects.project5.description":
       "La aplicación implementa una lógica que, al momento de realizar una petición, consulta los modelos gratuitos disponibles y los utiliza de forma secuencial hasta encontrar uno que esté activo y pueda retornar una respuesta correctamente.",
     "projects.demo": "Demo",
+    "projects.project6.title": "Pokedex App",
+    "projects.project6.description":
+      "Pokedex App es una aplicación móvil desarrollada con Expo + React Native que consume datos de la PokeAPI. Muestra una lista infinita de Pokémon (paginado) usando la API oficial de PokéAPI. Al tocar un Pokémon se muestra su detalle (peso, altura, tipo, stats, etc.). Usa react-query para caché y fetching eficiente. Navegación basada en Expo Router con file-based routing.",
     "skills.title": "Tecnologías y Habilidades",
     "footer.rights":
       "© 2023 Junier Ayala Perez. Todos los derechos reservados.",
@@ -99,6 +102,9 @@ const translations = {
     "projects.project5.description":
       "The application implements a logic that, when making a request, consults the available free models and uses them sequentially until it finds one that is active and can return a correct response.",
     "projects.demo": "Demo",
+    "projects.project6.title": "Pokedex App",
+    "projects.project6.description":
+      "Pokedex App is a mobile application developed with Expo and React Native that consumes data from the PokeAPI. It displays an infinite list of Pokémon (paginated) using the official PokeAPI. Tapping on a Pokémon displays its details (weight, height, type, stats, etc.). It uses react-query for efficient caching and fetching. Navigation is based on Expo Router with file-based routing.",
     "skills.title": "Technologies and Skills",
     "footer.rights": "© 2023 Junier Ayala Perez. All rights reserved.",
   },
